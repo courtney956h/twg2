@@ -31,7 +31,7 @@ body { font-family: 'Roboto';
 
 .menu_nav { flex: 1; }
 .nav_left { flex: 5; }
-.main_logo { flex: 4; }
+.main_logo { flex: 3.5; }
 .nav_right { flex: 4; }
 
 
@@ -53,7 +53,7 @@ body { font-family: 'Roboto';
     letter-spacing: 1px; }
 
 .nav_right li { display: inline-block;
-    padding: 10px; }
+    padding-left: 20px; }
 .nav_right li input { background: transparent;
     border-bottom: 1px solid #ffd26e;
     border-top: none;
@@ -121,9 +121,7 @@ body { font-family: 'Roboto';
 .holiday { padding: 200px 0;
     color: #fffef1; 
     text-align: center;
-    position: relative; 
-    /* background: #433734; */
-}
+    position: relative; }
 .holiday h3 { font-family: 'Prata'; 
     font-size: 30px; }
 .holiday h3:before { content: '';
@@ -132,15 +130,40 @@ body { font-family: 'Roboto';
     left: 47%;
     width: 120px; height: 4px;
     background: #ffd26e; }
-.holiday_list { padding: 50px 0; }
-.holiday_list li { width: 33%;
-    display: inline-block;
-    padding: 20px; }
-.holiday_list li img { width: 100%; }
+.holiday_list { padding: 50px 0; 
+    display: grid;
+    grid-template-columns: 33% 33% 33%; }
+.holiday_list li { padding: 20px; }
+
+/* holiday overlay */
+.h_list { position: relative;
+    overflow: hidden; }
+.h_list:hover .overlay { animation: fadeInUp 0.5s both;
+    opacity: 1; }
+.h_list .overlay { position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background: rgba(255, 210, 110, 0.4);
+    transition: all 0.5s;
+    opacity: 0; }
+.h_list .overlay a { font-family: 'Prata';
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 15px;
+    position: absolute;
+    top: 45%; left: 35%;
+    background: #fff;
+    color: #1f1613;
+    border: 1px solid #fff; }
+    
+.h_list img { width: 100%; }
 .holiday_list li span { display: block; 
     padding: 15px 0;
-    font-size: 12px; }
+    font-size: 13px; }
 
+
+
+
+/* vid */
 .vid { width: 100%; 
     padding-top: 25%; 
     position: relative; }
@@ -156,9 +179,13 @@ body { font-family: 'Roboto';
     height: 100%;
     text-align: center; }
 .vid_text p { font-size: 48px;
-    padding: 200px;
+    padding: 11%;
     font-family: 'Prata'; }
 
+
+
+
+/* trend */
 .trend { padding: 200px 0;
     color: #fffef1; 
     text-align: center; 
@@ -166,7 +193,7 @@ body { font-family: 'Roboto';
     position: relative; }
 .trend h3:before { content: '';
     position: absolute;
-    top: 9%;
+    top: 8.5%;
     left: 46.5%;
     width: 120px; height: 4px;
     background: #ffd26e; }
