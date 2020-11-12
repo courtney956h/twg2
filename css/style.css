@@ -12,12 +12,12 @@ ul, ol { list-style-type: none; }
 body { font-family: 'Roboto'; 
     background: #1f1613; }
 .cf::after, .cf::before { content: ''; clear: both; display: block; }
-.row { max-width: 1280px; margin: 0 auto; }
+.row { max-width: 1170px; margin: 0 auto; }
 
 #header { background: #1e1a19; 
     padding: 20px 0; 
     font-family: 'Prata'; 
-    vertical-align: middle;}
+    vertical-align: middle; }
 #header .row { margin: 0 auto; 
     display: flex; 
     justify-content: space-between; 
@@ -213,9 +213,56 @@ body { font-family: 'Roboto';
 .trend_text { flex: 2;
     color: #1f1613; 
     padding: 60px 100px;
-    text-align: left;  }
+    text-align: left; }
 .trend_text span { display: block; 
     font-size: 20px; 
     font-family: 'Prata';
     font-weight: bold; 
     padding: 20px 0; }
+
+
+
+
+
+#footer { background: #1e1a19; 
+    padding: 20px 0; 
+    color: #fffef1;
+    font-family: 'Prata';
+    vertical-align: middle; 
+    position: relative;
+    font-size: 12px; 
+    letter-spacing: 1px;
+    padding: 20px 0; }
+#footer .copyright { display: inline-block; }
+#footer .copyright p { display: inline-block; 
+    font-family: 'Roboto'; }
+#footer .more_info { float: right; }
+#footer .more_info a:hover { color: #ffd26e; }
+
+
+.info_nav { padding: 30px 17%; 
+    position: absolute; 
+    bottom: 56px; left: 0;
+    background: #1e1a19; 
+    display: none; }
+.info_nav ul { display: grid; 
+    grid-template-columns: 33.33% 33.33% 33.33%; }
+.info_nav ul li { padding: 0 30px; }
+.info_nav h3 { letter-spacing: 2px; 
+    font-size: 18px;
+    padding: 20px 0; }
+.country { font-size: 18px; }
+.info_link a { display: block; 
+    margin-bottom: 10px;
+    font-size: 13px; 
+    font-family: 'Roboto';
+    transition: all 0.5s; }
+.info_nav div a:hover { color: #ffd26e; }
+.follow { padding-top: 70px; }
+.follow .sns { width: 60%; display: flex; }
+.follow img { width: 100%; 
+    padding-right: 5px; }
+
+.close_btn { position: absolute;
+    top: 50px; right: 18%; }
+.close_btn img { width: 60%; }
