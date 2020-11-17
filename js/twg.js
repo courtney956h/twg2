@@ -1,5 +1,40 @@
 (function($) {
 
+    $('#wrap').on('click', '.depth1 .common h4 > a', function() {
+        var url = this.href;
+        $('#container > #content').remove();
+        $('#container').load(url + " #content");
+        return false
+    })
+
+
+    // findtea.html 부분 - slick으로 따로 호출
+    $('#wrap').on('click', '.depth1 .findtea h4 > a', function() {
+        var url = this.href;
+        $('#container > #content').remove();
+        $('#container').load(url + " #content", function() {
+            // findtea slick-slide
+            $('.findInner').slick({
+                autoplay:true,
+                dots:false,
+                autoplaySpeed:4500,
+                slidesToShow:5,
+                slidesToScroll:1,
+                pauseOnHover:true,
+                pauseOnDotsHover:true,
+                pauseOnFocus:true,
+                draggable:true,
+                fade:false,
+                arrows:true,
+                prevArrow:'<button class="prevArrow marrow"><img src="images/arrow-prev.png" alt=""></button>',
+                nextArrow:'<button class="nextArrow marrow"><img src="images/arrow-next.png" alt=""></button>'
+            });
+        });
+        return false
+    })
+
+
+
     init();
     function init() {
         var ww = $(window).width();
@@ -44,13 +79,13 @@
     );
 
     // .menu_nav
-        $('.menu_btn').on('click', function() {
-            $('.menu_nav').toggleClass('on')
-        })
+    $('.menu_btn').on('click', function() {
+        $('.menu_nav').toggleClass('on')
+    })
 
-        $('.menu_nav .close_btn').on('click', function() {
-            $('.menu_nav').removeClass('on')
-        });
+    $('.menu_nav .close_btn').on('click', function() {
+        $('.menu_nav').removeClass('on')
+    });
 
 
     // current
@@ -59,6 +94,24 @@
         $(this).addClass('current')
     });
 
+    // index slick-slide
+    $('.slideInner').slick({
+       autoplay:true,
+       dots:true,
+       autoplaySpeed:4500,
+       slidesToShow:1,
+       slidesToScroll:1,
+       pauseOnHover:true,
+       pauseOnDotsHover:true,
+       pauseOnFocus:true,
+       draggable:true,
+       fade:false,
+       arrows:true,
+       prevArrow:'<button class="prevArrow marrow"><img src="images/arrow-prev.png" alt=""></button>',
+       nextArrow:'<button class="nextArrow marrow"><img src="images/arrow-next.png" alt=""></button>'
+       });
 
+    
 
+    
 })(jQuery)
