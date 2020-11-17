@@ -28,15 +28,19 @@
                 </div>
 
                 <div class="menu_nav">
-                    <img src="images/logo2.png" alt="">
+                    <div class="menu_logo">
+                        <a href="main.html">
+                            <img src="images/logo2.png" alt="">
+                        </a>
+                    </div>
 
                     <div class="close_btn">
                         <img src="images/img_close_btn2.png" alt="">
                     </div>
                     
                     <ul class="depth1">
-                        <li>
-                            <h4><a href="#">FIND A TEA</a></h4>
+                        <li class="findtea">
+                            <h4><a href="findtea.html">FIND A TEA</a></h4>
                             <ul class="depth2">
                                 <li><a href="#">LOOSE LEAF TEAS</a>
                                     <ul class="depth3">
@@ -67,7 +71,7 @@
                             </ul>
                         </li>
                         
-                        <li>
+                        <li class="commontea">
                             <h4><a href="#">FOR THE TEA TABLE</a></h4>
                             <ul class="depth2">
                                 <li><a href="#">TEA ACCESSORIES</a>
@@ -106,7 +110,7 @@
                             </ul>
                         </li>
 
-                        <li>
+                        <li class="commontea">
                             <h4><a href="#">GIFTS</a></h4>
                             <ul class="depth2">
                                 <li><a href="#">VIEW ALL</a></li>
@@ -130,9 +134,13 @@
                     <li><a href="#">NEWS</a></li>
                     <li><a href="#">LOCATION</a></li>
                 </ul>
+
                 <div class="main_logo">
-                    <img src="images/logo.png" alt="">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="">
+                    </a>
                 </div>
+
                 <ul class="nav_right">
                     <li>
                         <input type="text" name="search" id="search">
@@ -285,6 +293,7 @@
                 <div class="copyright">
                     TWG Tea Company Pte Ltd. Copyright <p>&</p> Trademark Notices © 2020. All Rights Reserved.
                 </div>
+                
                 <div class="more_info">
                     <a href="#">▲ MORE INFORMATION</a>
                 </div>
@@ -353,22 +362,5 @@
 
     <script src="js/twg.js"></script>
 
-    <script>
-        $('.slideInner').slick({
-        autoplay:true,
-        dots:true,
-        autoplaySpeed:4500,
-        slidesToShow:1,
-        slidesToScroll:1,
-        pauseOnHover:true,
-        pauseOnDotsHover:true,
-        pauseOnFocus:true,
-        draggable:true,
-        fade:false,
-        arrows:true,
-        prevArrow:'<button class="prevArrow marrow"><img src="images/arrow-prev.png" alt=""></button>',
-        nextArrow:'<button class="nextArrow marrow"><img src="images/arrow-next.png" alt=""></button>'
-    })
-    </script>
 </body>
 </html>
