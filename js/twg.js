@@ -1,6 +1,6 @@
 (function($) {
 
-    $('#wrap').on('click', '.depth1 .common h4 > a', function() {
+    $('#wrap').on('click', '.depth1 .common h4 > a, .nav_left li a', function() {
         var url = this.href;
         $('#container > #content').remove();
         $('#container').load(url + " #content");
@@ -107,8 +107,8 @@
        draggable:true,
        fade:false,
        arrows:true,
-       prevArrow:'<button class="prevArrow marrow"><img src="images/arrow-prev.png" alt=""></button>',
-       nextArrow:'<button class="nextArrow marrow"><img src="images/arrow-next.png" alt=""></button>'
+       prevArrow:'<button class="prevArrow marrow"><i class="fas fa-caret-left"></i></button>',
+       nextArrow:'<button class="nextArrow marrow"><i class="fas fa-caret-right"></i></button>'
        });
 
     
