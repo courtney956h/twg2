@@ -57,11 +57,11 @@ body { font-family: 'Roboto';
     background: #ffd26e;
     color: #1e1a19; 
     font-weight: bold; 
+    z-index: 99999999;
     opacity: 0; 
-    transition: all 0.5s;}
+    transition: all 0.5s; }
 .menu_nav.on { left: 0;
-    opacity: 1;
-    z-index: 99999999; }
+    opacity: 1; }
 .menu_nav .menu_logo { padding: 30px 60px 15px; }
 .menu_nav .close_btn { position: absolute;
     top: 20px; right: 10px; }
@@ -318,6 +318,8 @@ body { font-family: 'Roboto';
 /* findtea.html */
 .find { border-bottom: 1px solid #ffd26e;
     padding: 80px 0; }
+.find_main img { width: 100%; }
+
 .find_text { text-align: center; 
     color: #fffef1;
     font-family: 'Prata';
@@ -383,4 +385,36 @@ body { font-family: 'Roboto';
 .findInner a p { color: #fffef1;
     font-size: 13px; 
     padding-bottom: 10px; }
+
+
+
+/* gift.html */
+.gift_main img { width: 100%; }
+
+.gift { background: #fffef1; }
+
+.gift_text { text-align: center; 
+    color: #1e1a19; 
+    font-family: 'Prata';
+    padding: 50px 0; 
+    letter-spacing: 2px;}
+.gift_text span { display: block;
+    font-size: 13px;
+    padding-bottom: 10px; 
+    font-family: 'Roboto'; }
+
+
+.gift_list { text-align: center; }
+.gift_list li { display: inline-block;
+    width: 30%; 
+    margin: 10px;
+    border: 1px solid #ffd26e; }
+.gift_list img { width: 100%; }
+.gift_list p { background: #fff;
+    padding: 20px 0;
+    color: #1e1a19; 
+    font-size: 13px;
+    letter-spacing: 1.5px; }
+
+
 
