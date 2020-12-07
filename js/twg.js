@@ -33,6 +33,36 @@
         return false
     })
 
+    // nav_left에 속한 li (gifts, news, location.html) 따로 호출
+    $('#wrap').on('click', '.nav_left li a', function() {
+        var url = this.href;
+        $('#container > #content').remove();
+        $('#container').load(url + " #content", function(){
+            // news.html의 topic
+            $('.topic').on('click', function() {
+                $('.topic_list').stop().slideToggle(300)
+                return false
+            });
+
+            // news.html
+            $('.newsInner').slick({
+                autoplay:true,
+                dots:false,
+                autoplaySpeed:4500,
+                slidesToShow:3,
+                slidesToScroll:1,
+                pauseOnHover:true,
+                pauseOnDotsHover:true,
+                pauseOnFocus:true,
+                draggable:true,
+                fade:false,
+                arrows:true,
+                prevArrow:'<button class="prevArrow marrow"><img src="images/arrow-prev.png" alt=""></button>',
+                nextArrow:'<button class="nextArrow marrow"><img src="images/arrow-next.png" alt=""></button>'
+            });
+        });
+        return false
+    })
 
 
     init();
@@ -49,6 +79,12 @@
         init();
     });
 
+
+    // account
+    $('.nav_right .account').on('click', function() {
+        $('.account_box').stop().slideToggle(300)
+        return false
+    })
 
 
     // footer의 .more_info 클릭시 .info 메뉴 보이기
@@ -93,6 +129,8 @@
         $('.nav_left li a.current').removeClass('current')
         $(this).addClass('current')
     });
+
+
 
     // index slick-slide
     $('.slideInner').slick({
