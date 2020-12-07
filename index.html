@@ -131,8 +131,8 @@
 
                 <ul class="nav_left">
                     <li><a href="gift.html">GIFTS</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">LOCATION</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="locations.html">LOCATION</a></li>
                 </ul>
 
                 <div class="main_logo">
@@ -146,10 +146,37 @@
                         <input type="text" name="search" id="search">
                         <button type="button"><img src="images/icon_search.png" alt=""></button>
                     </li>
-                    <li><a href="#"><img src="images/Account.svg" alt=""></a></li>
-                    <li><a href="#"><img src="images/Wishlist.svg" alt=""></a></li>
-                    <li><a href="#"><img src="images/shopping bag.svg" alt=""></a></li>
+                    <li class="account">
+                        <a href="#"><img src="images/Account.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/Wishlist.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/shopping bag.svg" alt=""></a>
+                    </li>
                 </ul>
+
+                <div class="account_box">
+                    <div class="login_box">
+                        <h2>LOG IN</h2>
+                        <form>
+                            <input type="text" name="userid" id="userid" placeholder="EMAIL ADDRESS*">
+                            <input type="password" name="password" id="password" placeholder="PASSWORD*">
+                            <div class="chk_box">
+                                <input type="checkbox" name="keepsign" id="keepsign">Kepp me signed in</input>
+                                <a href="#" class="pw_srch">Forgot your password?</a>
+                            </div>
+                            <button type="submit">SIGN IN</button>
+                        </form>
+                    </div>
+                    <div class="register_box">
+                        <h2>REGISTER</h2>
+                        <p>Enjoy immediate benefits and richer<br>
+                            experience by creating a personal account.</p>
+                        <button type="submit">REGISTER NOW</button>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -297,7 +324,7 @@
                 <div class="more_info">
                     <a href="#">▲ MORE INFORMATION</a>
                 </div>
-    
+
                 <div class="info_nav">
                     <ul>
                         <li>
@@ -355,7 +382,6 @@
                         </a>
                     </div>
                 </div>
-                
             </div>
         </footer>
     </div>
