@@ -134,19 +134,19 @@
 
     // index slick-slide
     $('.slideInner').slick({
-       autoplay:true,
-       dots:true,
-       autoplaySpeed:4500,
-       slidesToShow:1,
-       slidesToScroll:1,
-       pauseOnHover:true,
-       pauseOnDotsHover:true,
-       pauseOnFocus:true,
-       draggable:true,
-       fade:false,
-       arrows:true,
-       prevArrow:'<button class="prevArrow marrow"><i class="fas fa-caret-left"></i></button>',
-       nextArrow:'<button class="nextArrow marrow"><i class="fas fa-caret-right"></i></button>'
+        autoplay:true,
+        dots:true,
+        autoplaySpeed:4500,
+        slidesToShow:1,
+        slidesToScroll:1,
+        pauseOnHover:true,
+        pauseOnDotsHover:true,
+        pauseOnFocus:true,
+        draggable:true,
+        fade:true,
+        arrows:true,
+        prevArrow:'<button class="prevArrow marrow"><img src="images/arrow-prev.png" alt=""></button>',
+        nextArrow:'<button class="nextArrow marrow"><img src="images/arrow-next.png" alt=""></button>'
        });
 
     
