@@ -102,7 +102,7 @@ body { font-family: 'Roboto';
 
 .account_box { display: none;
     position: absolute;
-    top: 159px; right: 21%;
+    top: 159px; right: 19%;
     background: #fffef1;
     color: #1f1613;
     padding: 30px;
@@ -181,9 +181,9 @@ body { font-family: 'Roboto';
     position: absolute;
     top: 50%;
     transform: translateY(-50%); }
-.slideOuter .prevArrow { left: -80px; 
+.slideOuter .prevArrow { left: 30px; 
     z-Index: 999999; }
-.slideOuter .nextArrow { right: -80px; }
+.slideOuter .nextArrow { right: 30px; }
 
 
 
