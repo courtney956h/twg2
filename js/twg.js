@@ -125,7 +125,7 @@
 
 
     // current
-    $('.nav_left li a').on('click', function() {
+    $('.nav_left li a, .menu_bar').on('click', function() {
         $('.nav_left li a.current').removeClass('current')
         $(this).addClass('current')
     });
