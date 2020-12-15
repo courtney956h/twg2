@@ -80,6 +80,20 @@
     });
 
 
+    // popup 창 효과 (체크 클릭 후 닫기 버튼 누르면 사라짐)
+    if ( $.cookie('pop') != 'none' ) {
+        $('#popupBox').fadeIn(300)
+    }
+    $('#popupBox button').on('click', function() {
+        var chk = $('#popupBox input').prop('checked')
+        if ( chk ) {
+            $.cookie('pop', 'none', {expires:1})
+        }
+        $('#popupBox').fadeOut(300)
+    })
+
+
+
     // account
     $('.nav_right .account').on('click', function() {
         $('.account_box').stop().slideToggle(300)
