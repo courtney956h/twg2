@@ -12,6 +12,7 @@
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -164,7 +165,7 @@
                             <input type="text" name="userid" id="userid" placeholder="EMAIL ADDRESS*">
                             <input type="password" name="password" id="password" placeholder="PASSWORD*">
                             <div class="chk_box">
-                                <input type="checkbox" name="keepsign" id="keepsign">Kepp me signed in</input>
+                                <input type="checkbox" name="keepsign" id="keepsign">Keep me signed in</input>
                                 <a href="#" class="pw_srch">Forgot your password?</a>
                             </div>
                             <button type="submit">SIGN IN</button>
@@ -384,6 +385,20 @@
                 </div>
             </div>
         </footer>
+
+        <div id="popupBox">
+            <button type="button" class="close">X</button>
+            <div class="popup_container">
+                <div class="popuptxt">
+                    <p>비상업적인 용도로<br>
+                        포트폴리오 구현용으로만<br>
+                        제작한 사이트입니다.</p>
+                </div>
+            </div>
+            <div class="btnBox">
+                <input type="checkbox"> 오늘 하루 보지 않기
+            </div>
+        </div>
     </div>
 
     <script src="js/twg.js"></script>
